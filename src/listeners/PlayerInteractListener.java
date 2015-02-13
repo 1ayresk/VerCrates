@@ -1,5 +1,6 @@
 package listeners;
 
+import inv.InventoryManager;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.block.Chest;
@@ -30,6 +31,7 @@ public class PlayerInteractListener implements Listener {
                             instance.getKeyManager().takeKeys(player.getName(), keytype, 1);
                             instance.getCrateManager().runRandomCrateTask(instance.getCrateManager().getCratesKey(event.getClickedBlock().getLocation()), event.getPlayer());
                             player.sendMessage(ChatColor.GREEN+"You have successfully used a "+keytype + " key to use a crate. You now have "+instance.getKeyManager().getKeys(player.getName(), keytype)+" keys left.");
+                            InventoryManager.openInv(event.getPlayer());
                         }else{
                             player.sendMessage(ChatColor.RED+"Not enough keys!");
                         }
