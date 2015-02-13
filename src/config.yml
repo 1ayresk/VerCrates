@@ -1,0 +1,17 @@
+keys:
+  default:
+    task0:
+      commands:
+        - give {name} diamond 50
+    task1:
+      commands:
+        - broadcast &cYou have won a Spawner!
+        - give {name} 52
+#Do not Change the values!
+crates:
+  crate1:
+    X: 1
+    Y: 1
+    Z: 1
+    world: 'world'
+    type:

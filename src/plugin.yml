@@ -1,0 +1,11 @@
+main: me.bukkit.verocrate.Crates
+name: VeroCrates
+version: v1
+author: Ayresy
+commands:
+  crates:
+    description: Command for crates
+  cmessage:
+    description: Command to send Players a message
+  keys:
+    description: Add/take keys away/give to players
