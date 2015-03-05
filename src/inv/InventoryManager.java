@@ -23,7 +23,7 @@ public class InventoryManager {
     public static void openInv(final Player player){
         IInventory inv = new IInventory();
         inv.setPlayer(player);
-        final Inventory inventory = Bukkit.createInventory(null, 27, "Creat");
+        final Inventory inventory = Bukkit.createInventory(null, 27, "Crate");
         inv.setInventory(inventory);
         player.openInventory(inventory);
         inventories.add(inv);
